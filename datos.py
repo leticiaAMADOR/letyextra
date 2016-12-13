@@ -1,35 +1,35 @@
 import json
 
-class data:  
-    data = []
+class Clientes:  
+    dato = []
 
     def read(self):
         with open('clientes.json','r') as file:
-            data = json.load(file)
-            self.data = data['results'] 
+            dato = json.load(file)
+            self.data = dato['results'] 
 
     def getClientes(self): 
         clientes = []
         for row in self.data:
-            data = row['nom']
-            if cliente not in datas:
-                data.append(data)
-        return data
+            dato = row['nom']
+            if dato not in clientes:
+                clientes.append(dato)
+        return clientes
 
     
                 
-class data1:  
-    peli = []
+class Peliculas:  
+    dato2 = []
 
     def read(self):
         with open('peliculas.json','r') as file:
-            peli = json.load(file)
-            self.data1 = peli['results'] 
+            dato2 = json.load(file)
+            self.data1 = dato2['results'] 
 
     def getPeliculas(self): 
-        data1 = []
+        dato2 = []
         for row in self.data1:
-            peli = row['nom']
-            if peli not in data1:
-                data1.append(peli)
-        return data1
+            dato2 = row['nom']
+            if dato2 not in peliculas:
+                peliculas.append(dato2)
+        return peliculas
